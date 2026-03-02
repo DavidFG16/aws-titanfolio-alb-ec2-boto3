@@ -9,5 +9,7 @@ s3 = boto3.client('s3')
 # using the create_bucket method of the S3 client.
 s3.create_bucket(Bucket='botopython0912')
 
+# This line uploads a file named 'solarsystem.txt' 
+# from the local directory to the S3 bucket 'botopython0912' 
 s3.upload_file('solarsystem.txt', 'botopython0912', 'solarsystem.txt')
 
